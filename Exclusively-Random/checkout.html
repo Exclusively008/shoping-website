@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Checkout</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+<script>
+const firebaseConfig = {
+  apiKey: "AIzaSyAyowVncWNBAGoweD7qPR9CSCXXgv7-i-w",
+  authDomain: "exclusively-random-23ee8.firebaseapp.com",
+  projectId: "exclusively-random-23ee8",
+  storageBucket: "exclusively-random-23ee8.appspot.com",
+  messagingSenderId: "200790649744",
+  appId: "1:200790649744:web:634be7d265b21f9b4ce115"
+};
+
+firebase.initializeApp(firebaseConfig);
+const db = firebase.firestore();
+</script>
+
+<h1 style="text-align:center;">Checkout</h1>
+<div id="order-summary" style="text-align:center; margin:20px;"></div>
+
+<form id="order-form" style="text-align:center;">
+
+<input type="text" placeholder="Your Name" id="name" required><br><br>
+
+<input type="text" placeholder="Address" id="address" required><br><br>
+
+<input type="tel" placeholder="Phone Number" id="phone" required><br><br>
+
+<button type="submit">Place Order</button>
+
+</form>
+
+<script src="checkout.js"></script>
+
+</body>
+
+</html>

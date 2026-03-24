@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Exclusively Random</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header class="header">
+
+<h1>Exclusively Random</h1>
+<a href="wishlist.html" style="color:white; margin-left:10px;">
+❤️ Wishlist
+</a>
+<input type="text" id="search" placeholder="Search products...">
+
+<div class="cart-icon" onclick="toggleCart()">
+🛒 <span id="cart-count">0</span>
+</div>
+
+</header>
+
+
+<section id="products" class="product-grid">
+</section>
+
+
+<div id="cart-drawer" class="cart-drawer">
+
+<h2>Your Cart</h2>
+
+<div id="cart-items"></div>
+
+<div class="cart-footer">
+
+<p>Total: ₹<span id="cart-total">0</span></p>
+
+<button onclick="window.location.href='checkout.html'">
+Checkout
+</button>
+
+</div>
+
+</div>
+
+
+<script src="products.js"></script>
+<script src="app.js"></script>
+<script src="cart.js"></script>
+
+</body>
+</html>
